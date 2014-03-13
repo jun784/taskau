@@ -13,7 +13,19 @@ angular.module('taskauApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/parties/index.html',
+        controller: 'MainCtrl'
+      })
+      .when('/party/new/:pid', {
+        templateUrl: 'views/parties/new.html',
+        controller: 'MainCtrl'
+      })
+      .when('/party/:pid', {
+        templateUrl: 'views/parties/view.html',
+        controller: 'MainCtrl'
+      })
+      .when('/party/join/:pid', {
+        templateUrl: 'views/parties/join.html',
         controller: 'MainCtrl'
       })
       .when('/login', {
