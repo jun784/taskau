@@ -16,15 +16,15 @@ angular.module('taskauApp', [
         templateUrl: 'views/parties/index.html',
         controller: 'MainCtrl'
       })
-      .when('/party/new/:pid', {
+      .when('/parties/new/:pid', {
         templateUrl: 'views/parties/new.html',
         controller: 'MainCtrl'
       })
-      .when('/party/:pid', {
+      .when('/parties/:pid', {
         templateUrl: 'views/parties/view.html',
         controller: 'MainCtrl'
       })
-      .when('/party/join/:pid', {
+      .when('/parties/join/:pid', {
         templateUrl: 'views/parties/join.html',
         controller: 'MainCtrl'
       })
